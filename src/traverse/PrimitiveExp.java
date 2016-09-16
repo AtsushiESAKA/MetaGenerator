@@ -1,10 +1,10 @@
 package traverse;
 
-import model.Node;
+import model.AbstractNode;
 
 public abstract class PrimitiveExp extends Exp{
 
-	public PrimitiveExp(Node contents) {
+	public PrimitiveExp(AbstractNode contents) {
 		super(contents);
 	}
 

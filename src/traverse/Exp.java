@@ -3,22 +3,22 @@ package traverse;
 import model.ClassNode;
 import model.FieldNode;
 import model.MethodNode;
-import model.Node;
+import model.AbstractNode;
 import model.ParameterNode;
 
-public abstract class Exp extends Node implements Interpreter{
+public abstract class Exp extends AbstractNode implements Interpreter{
 	
-	private Node contents;
+	private AbstractNode contents;
 	
-	public Exp(Node contents) {
+	public Exp(AbstractNode contents) {
 		this.contents = contents;
 	}
 
-	protected Node getContents() {
+	protected AbstractNode getContents() {
 		return contents;
 	}
 	
-	public static Exp decorate(Node node) {
+	public static Exp decorate(AbstractNode node) {
 		
 		Exp exp = null;
 		

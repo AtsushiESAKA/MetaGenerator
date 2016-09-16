@@ -1,10 +1,10 @@
 package traverse;
 
-import model.Node;
+import model.AbstractNode;
 
 public class MethodExp extends CompositeExp{
 
-	public MethodExp(Node contents) {
+	public MethodExp(AbstractNode contents) {
 		super(contents);
 	}
 

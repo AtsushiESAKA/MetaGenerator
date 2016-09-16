@@ -1,10 +1,10 @@
 package traverse;
 
-import model.Node;
+import model.AbstractNode;
 
 public class FieldExp extends PrimitiveExp{
 
-	public FieldExp(Node contents) {
+	public FieldExp(AbstractNode contents) {
 		super(contents);
 	}
 

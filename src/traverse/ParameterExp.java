@@ -1,10 +1,10 @@
 package traverse;
 
-import model.Node;
+import model.AbstractNode;
 
 public class ParameterExp extends PrimitiveExp{
 
-	public ParameterExp(Node contents) {
+	public ParameterExp(AbstractNode contents) {
 		super(contents);
 	}
 
