@@ -1,5 +1,5 @@
 package model;
 
-public abstract class PrimitiveNode extends Node{
+public abstract class PrimitiveNode extends AbstractNode{
 
 }

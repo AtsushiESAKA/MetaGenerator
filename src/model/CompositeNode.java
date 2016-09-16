@@ -1,14 +1,14 @@
 package model;
 
-public abstract class CompositeNode extends Node{
+public abstract class CompositeNode extends AbstractNode{
 	
-	private Node children;
+	private AbstractNode children;
 
-	public Node getChildren() {
+	public AbstractNode getChildren() {
 		return children;
 	}
 
-	public void setChildren(Node children) {
+	public void setChildren(AbstractNode children) {
 		this.children = children;
 	}
 
