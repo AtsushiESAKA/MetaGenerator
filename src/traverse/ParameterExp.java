@@ -1,6 +1,8 @@
 package traverse;
 
 import model.AbstractNode;
+import transform.TransformIAD;
+import model.ParameterNode;
 
 public class ParameterExp extends PrimitiveExp{
 
@@ -9,7 +11,9 @@ public class ParameterExp extends PrimitiveExp{
 	}
 
 	@Override
-	public void interpreted() {
+	public void interpreted(TransformIAD iad) {
+		iad.parameterInterpretedBegin((ParameterNode)this.getContents());
+		iad.parameterInterpretedEnd((ParameterNode)this.getContents());
 	}
 
 }

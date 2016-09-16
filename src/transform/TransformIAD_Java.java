@@ -7,7 +7,7 @@ import model.ParameterNode;
 
 public class TransformIAD_Java extends TransformIAD{
 	
-	private Visitor java = new VisitorForJava();
+	private Visitor java = new VisitorForDisplayImageConstructorInJava();
 	
 	public void classInterpretedBegin(ClassNode node) {
 		java.visitClassBegin(node);

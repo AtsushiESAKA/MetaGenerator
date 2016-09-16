@@ -1,6 +1,7 @@
 package traverse;
 
 import model.AbstractNode;
+import java.util.List;
 
 public abstract class CompositeExp extends Exp{
 	
@@ -8,14 +9,20 @@ public abstract class CompositeExp extends Exp{
 		super(contents);
 	}
 
-	private Exp children;
+	private List<Exp> children;
 
-	public Exp getChildren() {
+	public List<Exp> getChildren() {
 		return children;
 	}
 
-	public void setChildren(Exp children) {
+	public void setChildren(List<Exp> children) {
 		this.children = children;
+	}
+	
+	public void addChild(Exp exp) {
+		if (children != null) {
+			children.add(exp);
+		}
 	}
 
 }
