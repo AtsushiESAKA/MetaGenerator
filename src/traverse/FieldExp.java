@@ -1,5 +1,7 @@
 package traverse;
 
+import transform.TransformIAD;
+import model.FieldNode;
 import model.Node;
 
 public class FieldExp extends PrimitiveExp{
@@ -9,8 +11,9 @@ public class FieldExp extends PrimitiveExp{
 	}
 
 	@Override
-	public void interpreted() {
-		
+	public void interpreted(TransformIAD iad) {
+		iad.fieldInterpretedBegin((FieldNode)this.getContents());
+		iad.fieldInterpretedEnd((FieldNode)this.getContents());
 	}
 
 }

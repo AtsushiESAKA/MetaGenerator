@@ -1,15 +1,21 @@
 package model;
 
+import java.util.List;
+
 public abstract class CompositeNode extends Node{
 	
-	private Node children;
+	private List<Node> children;
 
-	public Node getChildren() {
+	public List<Node> getChildren() {
 		return children;
 	}
 
-	public void setChildren(Node children) {
+	public void setChildren(List<Node> children) {
 		this.children = children;
+	}
+	
+	public void addChild(Node child) {
+		this.children.add(child);
 	}
 
 }
